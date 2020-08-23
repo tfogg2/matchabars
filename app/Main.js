@@ -4,7 +4,7 @@ import ReactDOM from "react-dom"
 import "./App.css"
 import Home from "./components/Home"
 import Axios from "axios"
-Axios.defaults.baseUrl = process.env.BACKENDURL || "https://backend-a.herokuapp.com"
+Axios.defaults.baseUrl = process.env.BACKENDURL || "https://backend-b.herokuapp.com"
 
 function Main() {
   return (
