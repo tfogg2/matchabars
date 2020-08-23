@@ -1,6 +1,5 @@
-import React, { useEffect } from "react"
+import Reactfrom "react"
 import { createUseStyles } from "react-jss"
-import { Link } from "react-router-dom"
 
 const useStyles = createUseStyles(theme => ({
   home: {
