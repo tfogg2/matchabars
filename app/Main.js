@@ -6,7 +6,7 @@ import Home from "./components/Home"
 import Axios from "axios"
 Axios.defaults.baseUrl = process.env.BACKENDURL || ""
 
-function App() {
+function Main() {
   return (
     <BrowserRouter>
       <Switch>
@@ -16,7 +16,7 @@ function App() {
   )
 }
 
-ReactDOM.render(<App />, document.querySelector("#app"))
+ReactDOM.render(<Main />, document.querySelector("#app"))
 
 if (module.hot) {
   module.hot.accept()

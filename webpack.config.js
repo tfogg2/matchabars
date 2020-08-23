@@ -14,7 +14,7 @@ const fse = require("fs-extra")
 class RunAfterCompile {
   apply(compiler) {
     compiler.hooks.done.tap("Copy files", function () {
-      fse.copySync("./app/index.css", "./dist/index.css")
+      fse.copySync("./app/App.css", "./dist/App.css")
 
       /*
         If you needed to copy another file or folder
@@ -27,7 +27,7 @@ class RunAfterCompile {
 }
 
 config = {
-  entry: "./app/App.js",
+  entry: "./app/Main.js",
   output: {
     publicPath: "/",
     path: path.resolve(__dirname, "app"),
